@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received | Glory Empire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #ffcc00; --dark: #050505; --card-bg: #0f0f0f; }
+        body { 
+            margin: 0; 
+            background-color: var(--dark); 
+            color: #e0e0e0; 
+            font-family: 'Poppins', sans-serif; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            text-align: center;
+            padding: 20px;
+        }
+
+        .success-icon {
+            font-size: 60px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .message-box {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #1a1a1a;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: #fff; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px; }
+        p { color: #888; line-height: 1.6; margin-bottom: 30px; }
+
+        .back-btn {
+            background: var(--gold);
+            color: #000;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 30px;
+            font-size: 11px;
+            color: #444;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-box">
+        <div class="success-icon">✔</div>
+        <h1>Application Sent</h1>
+        <p>Thank you for applying to join the Glory Empire network. Our team will review your details and reach out to you via WhatsApp shortly.</p>
+        <a href="index.html" class="back-btn">Return to Store</a>
+    </div>
+
+    <footer>
+        &copy; 2026 GLORY EMPIRE | OFFICIAL PARTNERSHIP
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distributor Application | Glory Empire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #ffcc00; --dark: #050505; --card-bg: #0f0f0f; }
+        body { margin: 0; background-color: var(--dark); color: #e0e0e0; font-family: 'Poppins', sans-serif; }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed; top: 0; width: 100%; background: rgba(5, 5, 5, 0.9);
+            backdrop-filter: blur(15px); border-bottom: 1px solid rgba(255, 204, 0, 0.1);
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 12px 5%; z-index: 1000; box-sizing: border-box;
+        }
+        .nav-logo { font-size: 20px; font-weight: 900; color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
+        .back-link { color: #888; text-decoration: none; font-size: 13px; font-weight: 600; transition: 0.3s; }
+        .back-link:hover { color: var(--gold); }
+
+        /* FORM CONTAINER */
+        .form-wrapper { padding: 100px 5% 60px; display: flex; justify-content: center; }
+        .form-container { 
+            width: 100%; max-width: 500px; 
+            background: var(--card-bg); 
+            padding: 30px; 
+            border-radius: 20px; 
+            border: 1px solid #1a1a1a; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        h2 { color: var(--gold); text-align: center; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; font-size: 22px; }
+        p.sub { text-align: center; color: #777; margin-bottom: 30px; font-size: 13px; line-height: 1.5; }
+
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-size: 13px; color: #888; font-weight: 600; }
+        
+        input {
+            width: 100%; padding: 14px; border-radius: 12px; border: 1px solid #222;
+            background: #000; color: white; outline: none; box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; transition: 0.3s;
+        }
+        input:focus { border-color: var(--gold); box-shadow: 0 0 10px rgba(255, 204, 0, 0.1); }
+
+        .submit-btn {
+            width: 100%; padding: 16px; background: var(--gold); color: #000; font-weight: 900;
+            border: none; border-radius: 12px; cursor: pointer; transition: 0.3s; 
+            font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-top: 10px;
+        }
+        .submit-btn:hover { background: #e6b800; transform: translateY(-2px); }
+
+        footer { text-align: center; padding: 40px 20px; color: #444; font-size: 11px; line-height: 1.6; border-top: 1px solid #111; }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-logo">Glory Empire</a>
+    <a href="index.html" class="back-link">← Back to Store</a>
+</nav>
+
+<div class="form-wrapper">
+    <div class="form-container">
+        <h2>Partner With Us</h2>
+        <p class="sub">Join the Glory Empire network as an official registered distributor.</p>
+        
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+                <label>Business Name (Optional)</label>
+                <input type="text" name="business" placeholder="Company or shop name">
+            </div>
+            
+            <div class="form-group">
+                <label>WhatsApp Number</label>
+                <input type="tel" name="phone" required placeholder="e.g. 0540952697">
+            </div>
+            
+            <div class="form-group">
+                <label>Your City / Region</label>
+                <input type="text" name="location" required placeholder="Where do you operate?">
+            </div>
+            
+            <div class="form-group">
+                <label>Referral / Sponsor</label>
+                <input type="text" name="sponsor" placeholder="Who introduced you?">
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 GLORY EMPIRE PARTNERSHIP<br>
+    CO-MANAGED BY FRANCIS OPOKU & SAMUEL KPACHIN
+</footer>
+
+</body>
+</html>
